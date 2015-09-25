@@ -1,2 +1,2 @@
 {{yield}}
-<li>{{question.content}} - by {{question.name}}</li>
+<li>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} - by {{question.name}}</li>
