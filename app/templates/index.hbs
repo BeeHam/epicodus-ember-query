@@ -1,2 +1,9 @@
 {{outlet}}
-<h1>Query</h1>
+<h3>It is the dawning of the age of</h3>
+<h1>A-Query-Us</h1>
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.content}} - by {{question.name}}</li>
+  {{/each}}
+</ul>
