@@ -5,6 +5,6 @@
 <h3>Query List</h3>
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question}}
+    {{question-tile question=question deleteQuestion="deleteQuestion"}}
   {{/each}}
 </ul>
