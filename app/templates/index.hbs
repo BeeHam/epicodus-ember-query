@@ -1,9 +1,10 @@
 {{outlet}}
 <h3>It is the dawning of the age of</h3>
 <h1>A-Query-Us</h1>
-
+<hr>
+<h3>Query List</h3>
 <ul>
   {{#each model as |question|}}
-    <li>{{question.content}} - by {{question.name}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
