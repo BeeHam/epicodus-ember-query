@@ -2,3 +2,12 @@
 <h1>Q &amp; A</h1>
 
 {{question-detail question=model update="update"}}
+
+<hr>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+<hr>
+{{new-answer saveAnswer="saveAnswer" question=model}}
